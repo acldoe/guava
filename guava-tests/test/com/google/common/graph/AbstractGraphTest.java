@@ -309,6 +309,11 @@ public abstract class AbstractGraphTest {
     putEdge(N1, N2);
     assertThat(graph.degree(N1)).isEqualTo(1);
     assertThat(graph.degree(N2)).isEqualTo(1);
+    
+    try {
+      int x = 0;
+    } catch(Exception e) {
+    }
   }
 
   @Test
